@@ -8,7 +8,7 @@
 
 <h2>Preview:</h2><br>
 
-<img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/WhatMail-Logo.png" alt="project-screenshot" width="1000" height="400/"><br><br>
+<img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/WhatMail-Logo.png" alt="project-screenshot" width="800" height="300/"><br><br>
 <img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/Output.png" alt="project-screenshot" width="800" height="400/"><br>
 
   
