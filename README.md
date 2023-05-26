@@ -8,9 +8,9 @@
 
 
 
-<img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/WhatMail-Logo.png" alt="project-screenshot" width="800" height="300/"><br><br>
+<p align="center"><img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/WhatMail-Logo.png" alt="project-screenshot"></p><br><br>
 <h2>Preview:</h2><br>
-<img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/Output.png" alt="project-screenshot" width="800" height="400/"><br>
+<p align="center"><img src="https://raw.githubusercontent.com/z0m31en7/WhatMail/main/Output.png" alt="project-screenshot"></p><br>
 
   
   <h2>💻 Filters Supported:</h2><br>
