@@ -8,17 +8,30 @@ print("▒█▒█▒█ █▀▀█ █▄▄█ ░░█░░ ▒█▒█
 print("▒█▄▀▄█ ▀░░▀ ▀░░▀ ░░▀░░ ▒█░░▒█ ▀░░▀ ▀▀▀ ▀▀▀ ▄░")
 print("\n")
 print("        A tool for email header forensics")
-print("	           By: Pranjal Goel (z0m31en7)\n")
+print("            By: Pranjal Goel (z0m31en7)\n")
+
 def parse_header(header_file):
     header_data = {}
 
     with open(header_file, 'r') as file:
         lines = file.readlines()
 
+        current_field = None
+        current_value = ''
+
         for line in lines:
             if ':' in line:
-                key, value = line.split(':', 1)
-                header_data[key.strip()] = value.strip()
+                if current_field:
+                    header_data[current_field] = current_value.strip()
+
+                current_field, current_value = line.split(':', 1)
+                current_field = current_field.strip()
+                current_value = current_value.strip()
+            elif current_field:
+                current_value += ' ' + line.strip()
+
+        if current_field:
+            header_data[current_field] = current_value.strip()
 
     return header_data
 
